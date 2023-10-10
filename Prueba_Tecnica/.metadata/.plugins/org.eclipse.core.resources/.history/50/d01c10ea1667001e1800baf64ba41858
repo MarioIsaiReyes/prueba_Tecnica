@@ -1,0 +1,5 @@
+package com.mario.reyes.demo.entidad;
+
+public interface usuarioRepositorio extends JpaRepository<entidadUsuario, Long> {
+
+}

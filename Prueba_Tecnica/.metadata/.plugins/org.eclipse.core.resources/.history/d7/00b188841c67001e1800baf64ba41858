@@ -1,0 +1,25 @@
+package com.mario.reyes.demo.test;
+
+import org.apache.catalina.startup.ClassLoaderFactory.Repository;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.mario.reyes.demo.controller.Autowired;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class TareasIntegracionTest {
+    @Autowired
+    private JdbcTemplate restTemplate;
+
+    @Autowired
+    private Repository taskRepository;
+
+    @Test
+    public void getAllTasks_ShouldReturnAllTasks() {
+        // Implementa la prueba aquí
+    }
+
+    // Agrega más pruebas de integración para otros escenarios
+}
